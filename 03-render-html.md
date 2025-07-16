@@ -14,8 +14,8 @@ Lalu component tersebut dirender dimana ?
 
 Jika melihat struktur utama dari aplikasi ini maka kita akan menemukan file <code>/public/index.html</code> dengan elemen <code>div</code> yang memiliki atribut <code>id="root"</code>. Ditempat tersebutlah React component dirender.
 
-```
-..... html
+``` html
+.....
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
 .....
