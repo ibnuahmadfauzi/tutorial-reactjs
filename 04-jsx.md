@@ -48,3 +48,38 @@ const myElement = <h3>Nama : {dataMahasiswa[0].nama}</h3>;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(myElement);
 ```
+
+## Memasukkan Banyak Elemen HTML
+
+Untuk menulis lebih dari satu elmen, pastikan ada satu elemen yang digunakan sebagai parent
+
+``` javascript
+.....
+const myElement = (
+  <table border={1} cellPadding={8} cellSpacing={0}>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Jurusan</th>
+        <th>Kampus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ibnu Ahmad Fauzi</td>
+        <td>Teknik Informatika</td>
+        <td>Universitas Islam Balitar</td>
+      </tr>
+      <tr>
+        <td>Fauziyah Meitaya</td>
+        <td>Pendidikan Matematika</td>
+        <td>Universitas Negeri Malang</td>
+      </tr>
+    </tbody>
+  </table>
+);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+```
+
+Pada kasus di atas kita punya elemen paling atas yaitu <code>table</code> Jika tidak punya elemen lain untuk menjadi parent, gunakan elemen <code>div</code> atau <code>fragmen</code> yaitu menggunakan elemen kosongan <code><> ... </></code>
