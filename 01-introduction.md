@@ -4,4 +4,9 @@
 
 - Front-end JavaScript Library
 - Dibuat oleh Jordan Walke (Software Engineer Facebook)
-- React biasa disebut
+- Biasa disebut React.js atau ReactJS
+- Digunakan untuk membangun UI Components
+
+## Bagaimana React Bekerja ?
+
+> React membuat sebuath <code>VIRTUAL DOM</code> di dalam memory
