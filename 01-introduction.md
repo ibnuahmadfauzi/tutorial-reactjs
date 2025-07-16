@@ -24,3 +24,10 @@ Sebelum mulai belajar ReactJS pastikan sudah menguasai:
 - HTML
 - CSS
 - JavaScript
+
+## ReactJS History
+
+- Versi terakhir ReactJS untuk saat ini adalah 19.0.0 (Desember 2024)
+- Pertama di rilis untuk umum (versi 0.3.0) pada bulan Juli 2023
+- Pertama digunakan untuk fitur Newsfed dari Facebook pada tahun 2011
+- Dibuat oleh Jordan Walke (Software Engineer di Facebook)
