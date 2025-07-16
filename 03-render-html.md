@@ -21,3 +21,12 @@ Jika melihat struktur utama dari aplikasi ini maka kita akan menemukan file <cod
 .....
 ```
 
+Berikut contoh render dari file <code>index.js</code>
+
+``` javascript
+const myFirstElement = <h1>Hello, World!</h1>;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myFirstElement);
+```
+
+> Nilai <code>id</code> yang digunakan tidak selalu root, ini hanya standard convention saja.
