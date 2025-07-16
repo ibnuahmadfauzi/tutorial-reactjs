@@ -30,3 +30,38 @@ root.render(myFirstElement);
 ```
 
 > Nilai <code>id</code> yang digunakan tidak selalu root, ini hanya standard convention saja.
+
+## Kode HTML
+
+Dalam menggunakan React untuk penulisan kode HTML disarankan menggunakan penulisan JSX yang mana memungkinkan kita menulis HTML ke dalam kode JavaScript dengan mudah. Berikut contohnya
+
+``` javascript
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const myFirstElement = (
+  <table border={1} cellPadding={8} cellSpacing={0}>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Jurusan</th>
+        <th>Universitas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ibnu Ahmad Fauzi</td>
+        <td>Teknik Informatika</td>
+        <td>Universitas Islam Balitar</td>
+      </tr>
+      <tr>
+        <td>Fauziyah Meitaya</td>
+        <td>Pendidikan Matematika</td>
+        <td>Universitas Negeri Malang</td>
+      </tr>
+    </tbody>
+  </table>
+);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myFirstElement);
+```
