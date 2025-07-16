@@ -42,3 +42,21 @@ Buat file dengan nama <code>index.html</code> lalu isi dengan script berikut:
 
 </html>
 ```
+
+Untuk menggunakan React di dokumen HTML, sertakan 3 script untuk melakukan embed library React nya, 2 script untuk memasukkan kode React, dan 1 untuk memasukkan <code>Babel</code> yang digunakan untuk memungkinkan menulis <code>JSX</code> dan <code>ES6</code> di browser lama.
+
+Cara ini cocok untuk sekedar menguji beberapa kode Ract, namun untuk produksi kita memerlukan React Environment.
+
+## Installasi React Environment
+
+Ketika menginstall NodeJS, kita juga mendapatkan npm dan npx. Dengan ini kita bisa membuat aplikasi React menggunakan <code>create-react-app</code>.
+
+> Pastikan tidak menggunakan installasi global, agar ketika membuat project baru selalu mendapat versi yang terbaru.
+
+Berikut kita buat project dengan nama <code>my-app</code>
+
+```
+npx create-react-app my-app
+```
+
+<code>create-react-app</code> akan menyiapkan semua yang kita butuhkan untuk menjalankan aplikasi React.
