@@ -126,3 +126,17 @@ export default App;
 ```
 
 > Setelah melakukan perubahan dan menyimpan perubahannya, biasanya browser otomatis melakukan reload halaman.
+
+## Apa Selanjutnya ?
+
+Untuk memulai belajar, silahkan hapus semua file di dalam folder <code>/src</code> dan sisakan file <code>index.js</code> lalu isikan dengan script berikut
+
+``` javascript
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const myFirstElement = <h1>Hello, World!</h1>;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myFirstElement);
+```
