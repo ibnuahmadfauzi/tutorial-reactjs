@@ -31,3 +31,20 @@ root.render(myElement);
 ```
 
 Seperti yang kalian lihat, dengan JSX kita bisa langsung memasukkan elemen HTMLnya tanpa method tambahan. JSX merupakan ekstensi dari bahasa JavaScript dengan basis ES6 yang diterjemahka ke dalam JavaScript ketika runtime.
+
+## Expressions
+
+Kita bisa menempatkan expression seperti operasi matematika, pemanggilan variabel, pemanggilan function, dsb. ke dalam kode JSX menggunakan curly braces <code>{ }</code>
+
+``` javascript
+.....
+const dataMahasiswa = [
+  {
+    nama: "Fauziyah Meitaya",
+    jurusan: "Pendidikan Matematika"
+  }
+];
+const myElement = <h3>Nama : {dataMahasiswa[0].nama}</h3>;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+```
