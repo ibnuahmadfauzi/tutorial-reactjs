@@ -1,4 +1,4 @@
-# React Introduction
+# Introduction
 
 ## Apa itu React ?
 
