@@ -53,10 +53,26 @@ Ketika menginstall NodeJS, kita juga mendapatkan npm dan npx. Dengan ini kita bi
 
 > Pastikan tidak menggunakan installasi global, agar ketika membuat project baru selalu mendapat versi yang terbaru.
 
-Berikut kita buat project dengan nama <code>my-app</code>
+Berikut kita buat project dengan nama <code>my-app</code>, tulis perintah berikut di Command Line / Terminal
 
 ```
 npx create-react-app my-app
 ```
 
 <code>create-react-app</code> akan menyiapkan semua yang kita butuhkan untuk menjalankan aplikasi React.
+
+## Menjalankan React Application
+
+Sekarang aplikasi sudah siap dijalankan. Masuk ke folder aplikasinya
+
+```
+cd my-react-app
+```
+
+Jalankan dengan perintah
+
+```
+npm start
+```
+
+Biasanya halaman browser akan otomatis terbuka jika proses menjalankan servernya sudah selesai. Jika tidak, silahkan kunjungi alamat <code>localhost:3000</code> di addrss bar.
