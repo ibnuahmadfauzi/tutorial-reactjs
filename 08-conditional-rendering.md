@@ -45,3 +45,5 @@ const infoBuku = {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Book info={infoBuku} />);
 ```
+
+Di atas contoh ketika menggunakan <code>if</code> statement untuk mengkondisikan component, diluar itu kita bisa mengimplementasikan perkondisian dengan cara lain, seperti <code>switch ... case</code> ataupun <code>ternary</code>.
