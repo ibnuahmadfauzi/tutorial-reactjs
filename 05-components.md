@@ -93,3 +93,70 @@ function Book() {
 }
 .....
 ```
+
+## Component File External
+
+Untuk menunjang kerapian kode program, kita bisa menempatkan komponen dari file lain, contohnya di sini saya membuat file <code>/src/components/DaftarBuku.js</code> lalu component DaftarBuku dimasukkan masukkan ke dalam file tersebut
+
+``` javascript
+function DaftarBuku() {
+  return (
+    <table border={1} cellPadding={8} cellSpacing={0}>
+      <thead>
+        <tr>
+          <th>Judul</th>
+          <th>Tahun</th>
+          <th>Penulis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Belajar React Dasar</td>
+          <td>2022</td>
+          <td>Ibnu Ahmad Fauzi</td>
+        </tr>
+        <tr>
+          <td>Pemrograman JavaScript Modern</td>
+          <td>2021</td>
+          <td>Andi Pratama</td>
+        </tr>
+        <tr>
+          <td>Dasar-dasar HTML & CSS</td>
+          <td>2020</td>
+          <td>Siti Rahmawati</td>
+        </tr>
+        <tr>
+          <td>Fullstack Web Developer</td>
+          <td>2023</td>
+          <td>Budi Santoso</td>
+        </tr>
+        <tr>
+          <td>Mastering Node.js</td>
+          <td>2024</td>
+          <td>Ade Firmansyah</td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}
+
+export default DaftarBuku;
+```
+
+Perlu diperhatikan di akhir baris kode harus di tambah <code>export default</code> diikuti nama component agar component tersebut bisa dipanggil dari file lain. Lalu untuk memanggilnya tambahkan import di dalam file yang memanggil component tersebut
+
+``` javascript
+import ReactDOM from "react-dom/client";
+import DaftarBuku from "./components/DaftarBuku";
+
+function Book() {
+  return (
+    <>
+      <h1>Koleksi Buku</h1>
+      <DaftarBuku />
+    </>
+  );
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Book />);
+```
